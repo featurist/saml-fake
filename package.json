@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "fake-sso-idp": "^0.1.3"
+  }
+}
