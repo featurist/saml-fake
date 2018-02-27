@@ -3,6 +3,7 @@
     "start": "node index.js"
   },
   "dependencies": {
-    "fake-sso-idp": "^0.1.3"
+    "fake-sso-idp":
+      "https://github.com/featurist/fake-sso-idp#b9661153ab5ddf290a3affd9edf58e69c568e146"
   }
 }

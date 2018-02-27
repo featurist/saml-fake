@@ -154,9 +154,9 @@ extend@^3.0.0:
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/extend/-/extend-3.0.1.tgz#a755ea7bc1adfcc5a31ce7e762dbaadc5e636444"
 
-fake-sso-idp@^0.1.3:
+"fake-sso-idp@https://github.com/featurist/fake-sso-idp#b9661153ab5ddf290a3affd9edf58e69c568e146":
   version "0.1.3"
-  resolved "https://registry.yarnpkg.com/fake-sso-idp/-/fake-sso-idp-0.1.3.tgz#d020fc43a38b4d83503ebcfedc0dd1599dc58ec0"
+  resolved "https://github.com/featurist/fake-sso-idp#b9661153ab5ddf290a3affd9edf58e69c568e146"
   dependencies:
     body-parser "^1.17.1"
     cookie-parser "^1.4.3"
