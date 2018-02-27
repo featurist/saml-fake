@@ -1,8 +1,8 @@
-const {create} = require('fake-sso-idp')
+const {create} = require('fake-sso-idp');
 const app = create({
   serviceProvider: {
     metadata: process.env.SAML_METADATA,
-    destination: process.env.SAML_DESTINATION
+    destination: process.env.SAML_DESTINATION,
   },
   users: [
     {
@@ -14,24 +14,29 @@ const app = create({
         emailAddress: {
           format: 'urn:oasis:names:tc:SAML:2.0:attrname-format:uri',
           value: 'susan@email.com',
-          type: 'xs:string'
+          type: 'xs:string',
         },
         firstName: {
           format: 'urn:oasis:names:tc:SAML:2.0:attrname-format:uri',
           value: 'Sue',
-          type: 'xs:string'
+          type: 'xs:string',
         },
         lastName: {
           format: 'urn:oasis:names:tc:SAML:2.0:attrname-format:uri',
           value: 'Sueson',
-          type: 'xs:string'
+          type: 'xs:string',
+        },
+        role: {
+          format: 'urn:oasis:names:tc:SAML:2.0:attrname-format:uri',
+          value: 'associate',
+          type: 'xs:string',
         },
         employeeIdentifier: {
           format: 'urn:oasis:names:tc:SAML:2.0:attrname-format:uri',
           value: 'employee-666',
-          type: 'xs:string'
-        }
-      }
+          type: 'xs:string',
+        },
+      },
     },
     {
       id: 'fubar',
