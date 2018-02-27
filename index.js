@@ -3,6 +3,7 @@ const app = create({
   serviceProvider: {
     metadata: process.env.SAML_METADATA,
     destination: process.env.SAML_DESTINATION,
+    forceAuthentication: true,
   },
   users: [
     {
@@ -47,14 +48,14 @@ const app = create({
         pisa_id: {
           format: 'urn:oasis:names:tc:SAML:2.0:attrname-format:uri',
           value: 'fubar',
-          type: 'xs:string'
-        }
-      }
-    }
-  ]
-})
+          type: 'xs:string',
+        },
+      },
+    },
+  ],
+});
 
-const port = Number(process.env.PORT || 7000)
-app.options.audience = process.env.SAML_AUDIENCE
-console.log(`Started on port ${port}...`)
-app.listen(port)
+const port = Number(process.env.PORT || 7000);
+app.options.audience = process.env.SAML_AUDIENCE;
+console.log(`Started on port ${port}...`);
+app.listen(port);
