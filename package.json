@@ -4,6 +4,6 @@
   },
   "dependencies": {
     "fake-sso-idp":
-      "https://github.com/featurist/fake-sso-idp#b9661153ab5ddf290a3affd9edf58e69c568e146"
+      "https://github.com/featurist/fake-sso-idp#6f4df124a586cd562886798850fe6d29d44b9b45"
   }
 }
