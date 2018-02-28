@@ -57,5 +57,6 @@ const app = create({
 
 const port = Number(process.env.PORT || 7000);
 app.options.audience = process.env.SAML_AUDIENCE;
+app.options.labels.headline = 'SAML Login';
 console.log(`Started on port ${port}...`);
 app.listen(port);
